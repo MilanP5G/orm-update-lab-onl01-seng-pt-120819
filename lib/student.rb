@@ -67,9 +67,9 @@ class Student
   end
 
    
-  def update
-    sql = "UPDATE students SET name = ?, grade = ? WHERE name = ?"
-    DB[:conn].execute(sql, self.name, self.grade, self.name)
+  def update(x)
+    sql = "UPDATE students SET name = ?, grade = ? WHERE x = ?"
+    DB[:conn].execute(sql, self.name, self.grade, self.x)
   end
 
 
