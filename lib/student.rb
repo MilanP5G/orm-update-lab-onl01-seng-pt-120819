@@ -50,8 +50,8 @@ class Student
      new_student
    end
    
-   def self.new_from_db(row)
-     new_student = self.new(row[0], row[2], row[3])
+   def self.new_from_db(array)
+     new_student = self.new(array[0], array[2], array[3])
      new_student
    end 
    
