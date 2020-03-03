@@ -51,7 +51,7 @@ class Student
    end
    
    def self.new_from_db(array)
-     new_student = self.new(array[0], array[2], array[3])
+     new_student = self.new(array[1], array[2], array[0])
      new_student
    end 
    
